@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#66bbff"></solid>
+        </shape>
+    </item>
+    <!--将外面的Item的左右两边和上边再原有基础上放大，使其只有下边框-->
+    <item
+        android:left="-2dip"
+        android:right="-2dip"
+        android:top="-2dip">
+        <!--上面及下方solid都是背景颜色-->
+        <shape>
+            <solid android:color="#6622ff"/>
+            <stroke
+                android:dashGap="0dp"
+                android:width="1dp"
+                android:dashWidth="0dp"
+                android:color="#000fff">
+            </stroke>
+        </shape>
+    </item>
+</layer-list>
